@@ -5,10 +5,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoice</title>
+    <title>InVoice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
+    <header class="text-center p-3 bg-dark mb-3">
+        <h1 class="text-light">YOUR INVOICE</h1>
+    </header>
+    <main class="">
+        <section id="Buyer-part" class="">
+            <div class="container bg-dark text-light text-center">
+                <h6 class="p-3">Please enter the details</h6>
+
+                <div class="input-group m-auto p-3 bg-info w-75">
+                    <span class="input-group-text">
+                        Buyer details
+                    </span>
+                    <input id="input-buyer" type="text" class="form-control" placeholder="" aria-label=""
+                        aria-describedby="basic-addon2">
+                    <button class="input-group-text btn btn-primary" id="submit-buyer">Submit</button>
+
+                </div>
+                <h6 class="p-3">Please enter the details</h6>
+                <div class="">
+                    <div class="mb-3">
+                        <div class="input-group m-auto  bg-info w-50">
+                            <span class="input-group-text"> Item name </span>
+                            <input id="input-list" type="text" class="form-control" placeholder="" aria-label=""
+                                aria-describedby="basic-addon2">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group m-auto  bg-info w-50">
+                            <span class="input-group-text"> Price </span>
+                            <input id="input-list" type="text" class="form-control" placeholder="" aria-label=""
+                                aria-describedby="basic-addon2">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group m-auto  bg-info w-50">
+                            <span class="input-group-text">Quantity </span>
+                            <input id="input-list" type="text" class="form-control" placeholder="" aria-label=""
+                                aria-describedby="basic-addon2">
+                        </div>
+                    </div>
+                    <button class="input-group-text btn btn-primary mb-3" id="basic-addon2">Add</button>
+                </div>
+            </div>
+        </section>
+        <section id="invoice" class="mx-5 mt-5 mb-0">
+            <div class="container bg-info p-3">
+                <h3>Invoice : # <span>23244</span></h3>
+                <hr class="text-white ">
+                <div class="m-3">
+                    <div class="row ">
+                        <div class="col-md-4 col-sm-12 bg-dark m-1 rounded-3 p-3" style="width: 400px; height: 150px;">
+                            <h6 class="text-warning">date: <span id="date" class="text-light"></span> </h6>
+                        </div>
+                        <div class="col-md-4 col-sm-12 bg-dark m-1 rounded-3 p-3" style="width: 400px; height: 150px;">
+                            <h6 class="text-warning">Invoice To</h6>
+                            <h6 class="text-light"><span id="invoice-to"></span></h6>
+                        </div>
+                        <div class="col-md-4 col-sm-12 bg-dark m-1 rounded-3 p-3" style="width: 400px; height: 150px;">
+                            <h6 class="text-warning">Seller</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-light">
+                    <table class="table  pb-3">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="list-item">
+                            <tr id="single-list">
+                                <th scope="row">1</th>
+                                <td>10</td>
+                                <td>5 </td>
+                                <td>50 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="result">
+            <div class="container bg-dark p-3">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h6 class="text-warning">Bank Transfer</h6>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h6 class="text-warning">Total Amountr</h6>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quasi nemo corporis beatae est?
+                        Vitae repellat, expedita mollitia esse repudiandae omnis! Eveniet quo tempora amet!</p>
+                </div>
+
+            </div>
+
+        </section>
+        <footer class="bg-dark text-center mt-1 p-3">
+            <p class="text-light">All rights @ roctim.icu </p>
+        </footer>
+    </main>
+    <script src="invoice.js"></script>
 
 </body>
 
