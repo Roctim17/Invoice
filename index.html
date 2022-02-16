@@ -33,25 +33,25 @@
                     <div class="mb-3">
                         <div class="input-group m-auto  bg-info w-50">
                             <span class="input-group-text"> Item name </span>
-                            <input id="input-list" type="text" class="form-control" placeholder="" aria-label=""
+                            <input id="Item-name" type="text" class="form-control" placeholder="" aria-label=""
                                 aria-describedby="basic-addon2">
                         </div>
                     </div>
                     <div class="mb-3">
                         <div class="input-group m-auto  bg-info w-50">
                             <span class="input-group-text"> Price </span>
-                            <input id="input-list" type="text" class="form-control" placeholder="" aria-label=""
+                            <input id="price" type="number" class="form-control" placeholder="" aria-label=""
                                 aria-describedby="basic-addon2">
                         </div>
                     </div>
                     <div class="mb-3">
                         <div class="input-group m-auto  bg-info w-50">
                             <span class="input-group-text">Quantity </span>
-                            <input id="input-list" type="text" class="form-control" placeholder="" aria-label=""
+                            <input id="quantity" type="number" class="form-control" placeholder="" aria-label=""
                                 aria-describedby="basic-addon2">
                         </div>
                     </div>
-                    <button class="input-group-text btn btn-primary mb-3" id="basic-addon2">Add</button>
+                    <button class="input-group-text btn btn-primary mb-3" id="add">Add</button>
                 </div>
             </div>
         </section>
@@ -84,11 +84,31 @@
                             </tr>
                         </thead>
                         <tbody id="list-item">
-                            <tr id="single-list">
+                            <!-- <tr id="single-list">
                                 <th scope="row">1</th>
                                 <td>10</td>
                                 <td>5 </td>
                                 <td>50 </td>
+                            </tr> -->
+                        </tbody>
+                        <tbody id="list-total">
+                            <tr id="single-list">
+                                <th scope="row"></th>
+                                <td></td>
+                                <td> </td>
+                                <th>SubTotal : <span id="sub-total"> 0 </span>Tk</td>
+                            </tr>
+                            <tr id="single-list">
+                                <th scope="row"></th>
+                                <td></td>
+                                <td> </td>
+                                <th>Tax : <span id="tax"> 0 </span>Tk</td>
+                            </tr>
+                            <tr id="single-list">
+                                <th scope="row"></th>
+                                <td></td>
+                                <td> </td>
+                                <th>Total Amount : <span id="total-amount"> 0 </span>Tk</td>
                             </tr>
                         </tbody>
                     </table>
@@ -102,7 +122,8 @@
                         <h6 class="text-warning">Bank Transfer</h6>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <h6 class="text-warning">Total Amountr</h6>
+                        <h6 class="text-warning">Total Amount <h1 id="total" class="text-light">0</h1>
+                        </h6>
                     </div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quasi nemo corporis beatae est?
                         Vitae repellat, expedita mollitia esse repudiandae omnis! Eveniet quo tempora amet!</p>
