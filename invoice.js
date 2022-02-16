@@ -49,7 +49,7 @@ document.getElementById('add').addEventListener("click", function () {
     const subTotalFinal = parseInt(subTotalInput.innerText);
 
     const tax = AddsubTotal() * .15;
-    document.getElementById('tax').innerText = tax;
+    document.getElementById('tax').innerText = tax.toFixed(2);
 
     const totalAmount = subTotalFinal + tax;
     document.getElementById('total-amount').innerText = totalAmount;
